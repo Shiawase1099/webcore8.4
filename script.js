@@ -13,14 +13,12 @@ button.addEventListener("click", () => {
   }
 });
 
-if (window.innerWidth < 768) {
-  new Swiper(".swiper", {
-    slidesPerView: 1.3,
-    spaceBetween: 16,
+new Swiper(".swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
