@@ -1,13 +1,15 @@
 const button = document.querySelector(".show-more");
-const slider = document.querySelector(".brands-slider");
+const buttonText = document.querySelector(".show-more-text");
+const grid = document.querySelector(".brands-grid");
 
 button.addEventListener("click", () => {
-  slider.classList.toggle("open");
+  grid.classList.toggle("open");
+  button.classList.toggle("active");
 
-  if (slider.classList.contains("open")) {
-    button.textContent = "Скрыть";
+  if (grid.classList.contains("open")) {
+    buttonText.textContent = "Скрыть";
   } else {
-    button.textContent = "Показать все";
+    buttonText.textContent = "Показать все";
   }
 });
 
